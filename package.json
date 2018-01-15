@@ -1,0 +1,20 @@
+{
+  "name": "foosball",
+  "version": "0.0.1",
+  "description": "foosball",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35",
+    "@tweenjs/tween.js": "^17.1.1",
+    "pixi.js": "^4.6.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  }
+}
