@@ -16,5 +16,9 @@
     "babel-preset-env": "^1.6.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack -p"
   }
 }
