@@ -13,9 +13,11 @@ const pallettes = [
     [0x26B8F2, 0xF29A21, 0x90dbf9, 0xf7c47d]
 ];
 const myPallette = pallettes[Math.floor(Math.random() * pallettes.length)];
-const colors = '00101011'.split('').map(index => myPallette[index]);
+const colors = "00101011".split("").map(index => myPallette[index]);
 
-const app = new PIXI.Application(w, h, {
+const app = new PIXI.Application({
+    width: w,
+    height: h,
     backgroundColor: 0xeeeeee,
     antialias: true
 });
