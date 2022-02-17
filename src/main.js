@@ -18,7 +18,7 @@ const colors = "00101011".split("").map(index => myPalette[index]);
 const app = new PIXI.Application({
     width: w,
     height: h,
-    backgroundColor: 0xeeeeee,
+    backgroundColor: 0xEBE8E7,
     antialias: true
 });
 document.body.appendChild(app.view);
