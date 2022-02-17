@@ -1,22 +1,19 @@
 {
-  "name": "foosball",
-  "version": "0.0.1",
-  "description": "foosball",
-  "main": "main.js",
-  "license": "MIT",
-  "dependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/preset-env": "^7.14.1",
-    "@tweenjs/tween.js": "^18.6.4",
-    "pixi.js": "^6.0.2"
+  "name": "@cm-tech/foosball",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:CM-Tech/foosball.git",
+  "author": "Cole Kissane <cole.kissane@gmail.com>",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "devDependencies": {
-    "babel-loader": "^8.2.2",
-    "webpack": "^5.36.2",
-    "webpack-cli": "^4.7.0"
+    "vite": "^2.2.3"
   },
-  "scripts": {
-    "start": "webpack serve --mode=development",
-    "build": "webpack --mode=production"
+  "dependencies": {
+    "@tweenjs/tween.js": "^18.6.4",
+    "pixi.js": "^6.0.2"
   }
 }

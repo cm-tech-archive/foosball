@@ -8,12 +8,12 @@ const r = [14, 8];
 if (w / r[0] < h / r[1]) h = r[1] * w / r[0];
 else w = r[0] * h / r[1];
 
-const pallettes = [
+const palettes = [
     [0x85D600, 0xDE4A1F, 0xc4ff66, 0xe98263],
     [0x26B8F2, 0xF29A21, 0x90dbf9, 0xf7c47d]
 ];
-const myPallette = pallettes[Math.floor(Math.random() * pallettes.length)];
-const colors = "00101011".split("").map(index => myPallette[index]);
+const myPalette = palettes[Math.floor(Math.random() * palettes.length)];
+const colors = "00101011".split("").map(index => myPalette[index]);
 
 const app = new PIXI.Application({
     width: w,
@@ -181,10 +181,10 @@ const move = () => {
     });
     guys = guys.map((a, column) => a.map(guy => {
         let movement;
-        if (guy.color == myPallette[0]) {
+        if (guy.color == myPalette[0]) {
             guy.y = guy.offsetY + redOffset[column];
             movement = 1;
-        } else if (guy.color == myPallette[1]) {
+        } else if (guy.color == myPalette[1]) {
             guy.y = guy.offsetY + blueOffset[column];
             movement = -1;
         }
@@ -249,7 +249,7 @@ const draw = () => {
     }
     graphics.endFill();
 
-    graphics.beginFill(myPallette[2], 1);
+    graphics.beginFill(myPalette[2], 1);
     redScore.map((element, index) => {
         const s = element.scale;
 
@@ -261,7 +261,7 @@ const draw = () => {
     });
     graphics.endFill();
 
-    graphics.beginFill(myPallette[3], 1);
+    graphics.beginFill(myPalette[3], 1);
     blueScore.map((element, index) => {
         const s = element.scale;
         graphics.drawRoundedRect(
